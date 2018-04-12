@@ -199,6 +199,7 @@
             this.txtSetsID.Name = "txtSetsID";
             this.txtSetsID.Size = new System.Drawing.Size(56, 23);
             this.txtSetsID.TabIndex = 12;
+            this.txtSetsID.TabStop = false;
             this.txtSetsID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // comSets
@@ -272,6 +273,7 @@
             this.txtGroup.Name = "txtGroup";
             this.txtGroup.Size = new System.Drawing.Size(56, 23);
             this.txtGroup.TabIndex = 11;
+            this.txtGroup.TabStop = false;
             this.txtGroup.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // tableLayoutPanel2
@@ -310,6 +312,7 @@
             this.txtFactory.Name = "txtFactory";
             this.txtFactory.Size = new System.Drawing.Size(56, 23);
             this.txtFactory.TabIndex = 10;
+            this.txtFactory.TabStop = false;
             this.txtFactory.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // comFactory
@@ -383,6 +386,7 @@
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(56, 23);
             this.txtType.TabIndex = 9;
+            this.txtType.TabStop = false;
             this.txtType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // tableLayoutPanel7

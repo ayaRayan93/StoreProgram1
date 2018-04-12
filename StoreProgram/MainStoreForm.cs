@@ -713,8 +713,8 @@ namespace StoreProgram
     }
     public static class connection
     {
-      // public static string connectionString = "SERVER=192.168.1.200;DATABASE=cccserver;user=Devccc;PASSWORD=rootroot;CHARSET=utf8";
-       public static string connectionString = "SERVER=localhost;DATABASE=cccLocal;user=root;PASSWORD=root;CHARSET=utf8";
+       public static string connectionString = "SERVER=192.168.1.200;DATABASE=cccserver;user=Devccc;PASSWORD=rootroot;CHARSET=utf8";
+      // public static string connectionString = "SERVER=localhost;DATABASE=cccLocal;user=root;PASSWORD=root;CHARSET=utf8";
 
     }
 }

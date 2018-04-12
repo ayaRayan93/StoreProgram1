@@ -49,6 +49,7 @@ namespace StoreProgram
                         com.ExecuteNonQuery();
                         MessageBox.Show("add success");
                         clear();
+                        txtName.Focus();
                     }
                     else
                     {

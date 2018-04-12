@@ -388,6 +388,7 @@
             this.txtProduct.Name = "txtProduct";
             this.txtProduct.Size = new System.Drawing.Size(69, 26);
             this.txtProduct.TabIndex = 12;
+            this.txtProduct.TabStop = false;
             this.txtProduct.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // label5
@@ -443,6 +444,7 @@
             this.txtGroup.Name = "txtGroup";
             this.txtGroup.Size = new System.Drawing.Size(69, 26);
             this.txtGroup.TabIndex = 11;
+            this.txtGroup.TabStop = false;
             this.txtGroup.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // comProduct
@@ -498,6 +500,7 @@
             this.txtFactory.Name = "txtFactory";
             this.txtFactory.Size = new System.Drawing.Size(69, 26);
             this.txtFactory.TabIndex = 13;
+            this.txtFactory.TabStop = false;
             this.txtFactory.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // comFactory
@@ -570,6 +573,7 @@
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(69, 26);
             this.txtType.TabIndex = 12;
+            this.txtType.TabStop = false;
             this.txtType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // tableLayoutPanel4

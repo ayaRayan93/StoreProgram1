@@ -50,14 +50,14 @@ namespace StoreProgram
                     conn.Open();
                     String query = "update store set Name=@Name,Address=@Address,Phone=@Phone where ID='" + ID + "'";
                     MySqlCommand com = new MySqlCommand(query, conn);
-
-
+                    
                     com.Parameters.Add("@Name", MySqlDbType.VarChar, 255).Value = txtName.Text;
                     com.Parameters.Add("@Address", MySqlDbType.VarChar, 255).Value = txtAddress.Text;
                     com.Parameters.Add("@Phone", MySqlDbType.VarChar, 255).Value = txtPhone.Text;
 
                     com.ExecuteNonQuery();
                     MessageBox.Show("udpate success :)");
+                    txtName.Focus();
                 }
                 else
                 {

@@ -88,15 +88,19 @@ namespace StoreProgram
                 {
                     case "comType":
                         txtType.Text = comType.SelectedValue.ToString();
+                        displayProducts();
                         break;
                     case "comFactory":
                         txtFactory.Text = comFactory.SelectedValue.ToString();
+                        displayProducts();
                         break;
                     case "comGroup":
                         txtGroup.Text = comGroup.SelectedValue.ToString();
+                        displayProducts();
                         break;
                     case "comProduct":
                         txtProduct.Text = comProduct.SelectedValue.ToString();
+                        displayProducts();
                         break;
                 }
             }
@@ -124,6 +128,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comType.Text = Name;
                                     txtFactory.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {
@@ -140,6 +146,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comFactory.Text = Name;
                                     txtGroup.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {
@@ -156,6 +164,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comGroup.Text = Name;
                                     txtProduct.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {
@@ -172,6 +182,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comProduct.Text = Name;
                                     txtType.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {

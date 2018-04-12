@@ -396,7 +396,7 @@
             this.mTC_Content.ItemSize = new System.Drawing.Size(100, 10);
             this.mTC_Content.Location = new System.Drawing.Point(48, 129);
             this.mTC_Content.Name = "mTC_Content";
-            this.mTC_Content.SelectedIndex = 0;
+            this.mTC_Content.SelectedIndex = 5;
             this.mTC_Content.Size = new System.Drawing.Size(808, 327);
             this.mTC_Content.Style = MetroFramework.MetroColorStyle.Orange;
             this.mTC_Content.TabIndex = 0;
@@ -610,6 +610,7 @@
             this.dataGridViewSort.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewSort.Size = new System.Drawing.Size(228, 238);
             this.dataGridViewSort.TabIndex = 0;
+            this.dataGridViewSort.TabStop = false;
             this.dataGridViewSort.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSort_CellClick);
             // 
             // metroTabPage5
@@ -881,6 +882,7 @@
             this.dataGridViewSize.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewSize.Size = new System.Drawing.Size(228, 238);
             this.dataGridViewSize.TabIndex = 4;
+            this.dataGridViewSize.TabStop = false;
             this.dataGridViewSize.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSize_CellClick);
             // 
             // metroTabPage4
@@ -1424,6 +1426,7 @@
             this.dataGridViewProduct.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewProduct.Size = new System.Drawing.Size(228, 238);
             this.dataGridViewProduct.TabIndex = 4;
+            this.dataGridViewProduct.TabStop = false;
             this.dataGridViewProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProduct_CellClick);
             // 
             // metroTabPage2
@@ -1696,6 +1699,7 @@
             this.dataGridViewGroup.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewGroup.Size = new System.Drawing.Size(228, 238);
             this.dataGridViewGroup.TabIndex = 4;
+            this.dataGridViewGroup.TabStop = false;
             this.dataGridViewGroup.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGroup_CellClick);
             // 
             // metroTabPage1

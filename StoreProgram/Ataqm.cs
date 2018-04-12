@@ -168,7 +168,7 @@ namespace StoreProgram
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.ToString());
+                  //  MessageBox.Show(ex.ToString());
                 }
                 dbconnection.Close();
             }

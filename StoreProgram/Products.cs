@@ -94,15 +94,19 @@ namespace StoreProgram
                 {
                     case "comType":
                         txtType.Text = comType.SelectedValue.ToString();
+                        displayProducts();
                         break;
                     case "comFactory":
                         txtFactory.Text = comFactory.SelectedValue.ToString();
+                        displayProducts();
                         break;
                     case "comGroup":
                         txtGroup.Text = comGroup.SelectedValue.ToString();
+                        displayProducts();
                         break;
                     case "comProduct":
                         txtProduct.Text = comProduct.SelectedValue.ToString();
+                        displayProducts();
                         break;
                 }
             }
@@ -113,6 +117,7 @@ namespace StoreProgram
             string query;
             MySqlCommand com;
             string Name;
+
             if (e.KeyCode == Keys.Enter)
             {
                 try
@@ -130,6 +135,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comType.Text = Name;
                                     txtFactory.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {
@@ -146,6 +153,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comFactory.Text = Name;
                                     txtGroup.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {
@@ -162,6 +171,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comGroup.Text = Name;
                                     txtProduct.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {
@@ -178,6 +189,8 @@ namespace StoreProgram
                                     Name = (string)com.ExecuteScalar();
                                     comProduct.Text = Name;
                                     txtType.Focus();
+                                    dbconnection.Close();
+                                    displayProducts();
                                 }
                                 else
                                 {
@@ -345,7 +358,7 @@ namespace StoreProgram
                 //  string query = "select distinct data.Code as 'كود' , type.Type_Name as 'النوع', factory.Factory_Name as 'المصنع' ,groupo.Group_Name as 'المجموعة', product.Product_Name as 'المنتج' ,data.Colour as 'لون', data.Size as 'المقاس', data.Sort as 'الفرز',data.Classification as 'التصنيف', data.Description as 'الوصف', data.Carton as 'الكرتنة' from data INNER JOIN type ON type.Type_ID = data.Type_ID INNER JOIN product ON product.Product_ID = data.Product_ID INNER JOIN factory ON data.Factory_ID = factory.Factory_ID INNER JOIN groupo ON data.Group_ID = groupo.Group_ID  where  data.Type_ID IN(" + q1 + ") and  data.Factory_ID  IN(" + q2 + ") and data.Group_ID IN (" + q4 + ") group by data.Code";
 
 
-                string query = "SELECT data.Data_ID,data.Code,product.Product_Name,type.Type_Name,factory.Factory_Name,groupo.Group_Name,color.Color_Name,size.Size_Value,sort.Sort_Value,data.Classification,data.Description,data.Carton from data INNER JOIN type ON type.Type_ID = data.Type_ID INNER JOIN product ON product.Product_ID = data.Product_ID INNER JOIN factory ON data.Factory_ID = factory.Factory_ID INNER JOIN groupo ON data.Group_ID = groupo.Group_ID LEFT outer JOIN color ON data.Color_ID = color.Color_ID LEFT outer  JOIN size ON data.Size_ID = size.Size_ID LEFT outer  JOIN sort ON data.Sort_ID = sort.Sort_ID where  data.Type_ID IN(" + q1 + ") and  data.Factory_ID  IN(" + q2 + ") and data.Group_ID IN (" + q4 + ") group by data.Code";
+                string query = "SELECT data.Data_ID,data.Code,product.Product_Name,type.Type_Name,factory.Factory_Name,groupo.Group_Name,color.Color_Name,size.Size_Value,sort.Sort_Value,data.Classification,data.Description,data.Carton from data INNER JOIN type ON type.Type_ID = data.Type_ID INNER JOIN product ON product.Product_ID = data.Product_ID INNER JOIN factory ON data.Factory_ID = factory.Factory_ID INNER JOIN groupo ON data.Group_ID = groupo.Group_ID LEFT outer JOIN color ON data.Color_ID = color.Color_ID LEFT outer  JOIN size ON data.Size_ID = size.Size_ID LEFT outer  JOIN sort ON data.Sort_ID = sort.Sort_ID where  data.Type_ID IN(" + q1 + ") and  data.Factory_ID  IN(" + q2 + ") and  data.Product_ID  IN(" + q3 + ") and data.Group_ID IN (" + q4 + ") group by data.Code";
 
                 MySqlCommand comand = new MySqlCommand(query, dbconnection);
                 dataGridView1.Rows.Clear();
@@ -405,6 +418,109 @@ namespace StoreProgram
             }
         }
 
-      
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tLPanProductsContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tLPanFilter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtProduct_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGroup_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtFactory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comFactory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtType_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tLPanSearch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
