@@ -112,7 +112,6 @@
             this.tLPanProductsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tLPanProductsContainer.Size = new System.Drawing.Size(1053, 564);
             this.tLPanProductsContainer.TabIndex = 1;
-            this.tLPanProductsContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.tLPanProductsContainer_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -128,7 +127,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(737, 28);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label1
             // 
@@ -157,7 +155,6 @@
             this.tLPanFilter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tLPanFilter.Size = new System.Drawing.Size(737, 112);
             this.tLPanFilter.TabIndex = 1;
-            this.tLPanFilter.Paint += new System.Windows.Forms.PaintEventHandler(this.tLPanFilter_Paint);
             // 
             // tableLayoutPanel3
             // 
@@ -183,7 +180,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(737, 56);
             this.tableLayoutPanel3.TabIndex = 1;
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // txtProduct
             // 
@@ -197,7 +193,6 @@
             this.txtProduct.Size = new System.Drawing.Size(67, 23);
             this.txtProduct.TabIndex = 1;
             this.txtProduct.TabStop = false;
-            this.txtProduct.TextChanged += new System.EventHandler(this.txtProduct_TextChanged);
             this.txtProduct.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // comProduct
@@ -215,7 +210,6 @@
             this.comProduct.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comProduct.Size = new System.Drawing.Size(215, 27);
             this.comProduct.TabIndex = 1;
-            this.comProduct.SelectedIndexChanged += new System.EventHandler(this.comProduct_SelectedIndexChanged);
             this.comProduct.SelectedValueChanged += new System.EventHandler(this.comBox_SelectedValueChanged);
             // 
             // comGroup
@@ -233,7 +227,6 @@
             this.comGroup.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comGroup.Size = new System.Drawing.Size(215, 27);
             this.comGroup.TabIndex = 0;
-            this.comGroup.SelectedIndexChanged += new System.EventHandler(this.comGroup_SelectedIndexChanged);
             this.comGroup.SelectedValueChanged += new System.EventHandler(this.comBox_SelectedValueChanged);
             // 
             // label5
@@ -274,7 +267,6 @@
             this.txtGroup.Size = new System.Drawing.Size(67, 23);
             this.txtGroup.TabIndex = 0;
             this.txtGroup.TabStop = false;
-            this.txtGroup.TextChanged += new System.EventHandler(this.txtGroup_TextChanged);
             this.txtGroup.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // tableLayoutPanel2
@@ -301,7 +293,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(737, 56);
             this.tableLayoutPanel2.TabIndex = 0;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // txtFactory
             // 
@@ -315,7 +306,6 @@
             this.txtFactory.Size = new System.Drawing.Size(67, 23);
             this.txtFactory.TabIndex = 1;
             this.txtFactory.TabStop = false;
-            this.txtFactory.TextChanged += new System.EventHandler(this.txtFactory_TextChanged);
             this.txtFactory.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // comFactory
@@ -333,7 +323,6 @@
             this.comFactory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comFactory.Size = new System.Drawing.Size(215, 27);
             this.comFactory.TabIndex = 2;
-            this.comFactory.SelectedIndexChanged += new System.EventHandler(this.comFactory_SelectedIndexChanged);
             this.comFactory.SelectedValueChanged += new System.EventHandler(this.comBox_SelectedValueChanged);
             // 
             // comType
@@ -351,7 +340,6 @@
             this.comType.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comType.Size = new System.Drawing.Size(215, 27);
             this.comType.TabIndex = 0;
-            this.comType.SelectedIndexChanged += new System.EventHandler(this.comType_SelectedIndexChanged);
             this.comType.SelectedValueChanged += new System.EventHandler(this.comBox_SelectedValueChanged);
             // 
             // label2
@@ -392,7 +380,6 @@
             this.txtType.Size = new System.Drawing.Size(67, 23);
             this.txtType.TabIndex = 0;
             this.txtType.TabStop = false;
-            this.txtType.TextChanged += new System.EventHandler(this.txtType_TextChanged);
             this.txtType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBox_KeyDown);
             // 
             // tLPanSearch
@@ -410,7 +397,6 @@
             this.tLPanSearch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tLPanSearch.Size = new System.Drawing.Size(257, 106);
             this.tLPanSearch.TabIndex = 2;
-            this.tLPanSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.tLPanSearch_Paint);
             // 
             // btnSearch
             // 
@@ -464,7 +450,6 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(257, 360);
             this.tableLayoutPanel4.TabIndex = 4;
-            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
             // tableLayoutPanel5
             // 
@@ -482,7 +467,6 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(251, 102);
             this.tableLayoutPanel5.TabIndex = 0;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
             // bunifuTileButton1
             // 
@@ -563,7 +547,6 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(251, 246);
             this.tableLayoutPanel6.TabIndex = 1;
-            this.tableLayoutPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel6_Paint);
             // 
             // bunifuFlatButton2
             // 
@@ -638,7 +621,6 @@
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Neo Sans Arabic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
             // panel1
             // 
@@ -648,7 +630,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(731, 360);
             this.panel1.TabIndex = 6;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dataGridView1
             // 
@@ -697,8 +678,6 @@
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             this.dataGridView1.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowLeave);
             // 
             // Data_ID
@@ -769,7 +748,6 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 7;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Products
             // 

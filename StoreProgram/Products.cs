@@ -390,19 +390,7 @@ namespace StoreProgram
             dbconnection.Close();
         }
 
-        private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
+     
         private void dataGridView1_RowLeave(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -418,109 +406,6 @@ namespace StoreProgram
             }
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tLPanProductsContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tLPanFilter_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtProduct_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comProduct_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comGroup_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtGroup_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtFactory_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comFactory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtType_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tLPanSearch_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void bunifuFlatButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+     
     }
 }
